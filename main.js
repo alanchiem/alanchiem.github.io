@@ -15,6 +15,7 @@ new Masonry("#posts .grid",{
 
 // Sticky Navigation
 window.onscroll = function(){myFunction()};
+window.onload = function(){myFunction()};
 
 // Get current value
 let navbar = document.getElementById("header");
@@ -28,7 +29,6 @@ function myFunction(){
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
     } else {
-        
     }
 
 }
