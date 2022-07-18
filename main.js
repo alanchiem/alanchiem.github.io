@@ -12,3 +12,23 @@ new Masonry("#posts .grid",{
     itemSelector :'.grid-item',
     gutter: 20
 });
+
+// Sticky Navigation
+window.onscroll = function(){myFunction()};
+
+// Get current value
+let navbar = document.getElementById("header");
+
+// Get navbar pos
+let sticky = navbar.offsetTop;
+
+// Sticky function
+
+function myFunction(){
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+
+}

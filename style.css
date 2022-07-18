@@ -144,6 +144,9 @@ a {
     outline: none;
 }
 
+.shadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 /* Navigation Menu */
 
 /* Main Section */
@@ -164,7 +167,24 @@ a {
     width: calc(33.3333% - 20px);
     margin-bottom: 3em;
 }
+
 /* Main Section */
+
+
+/* Sticky */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.sticky + .grid {
+    padding-top: 60px;
+  }
+/* Sticky */
+
 
 /* Media Query */
 
