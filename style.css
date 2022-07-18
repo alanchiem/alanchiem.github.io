@@ -158,7 +158,7 @@ a {
 
 .grid .grid-item{
     width: calc(33.3333% - 20px);
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 /* Main Section */
