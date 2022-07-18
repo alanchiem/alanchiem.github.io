@@ -117,17 +117,10 @@ a {
     margin: 12px;
     color: var(--dark);
     font-family: 'Roboto', sans-serif;
-
 }
 
 .nav-link:hover{
     color: var(--primary-color)
-}
-.search-box{
-    display: inline;
-    border-right: 1px solid var(--secondary);
-    padding-right: 12px;
-    margin-right: 10px;
 }
 
 .toggle-button{
