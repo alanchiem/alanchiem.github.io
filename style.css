@@ -149,7 +149,7 @@ a {
 }
 
 #posts{
-    margin-bottom 5pm;
+    margin-bottom: 5pm;
 }
 
 .grid{
@@ -184,6 +184,10 @@ a {
 @media(max-width: 992px) {
     .navbar{
         flex-direction: column;
+    }
+
+    #site-main{
+        margin-top: 14em;
     }
 }
 
@@ -222,6 +226,10 @@ a {
 
     .grid .grid-item{
         width: calc(100% - 20px);
+    }
+
+    #site-main{
+        margin-top: 6em;
     }
 }
 
