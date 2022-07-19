@@ -99,6 +99,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    
 }
 
 .nav-brand{
@@ -106,6 +107,10 @@ a {
     font-weight: bold;
     align-self: center;
     font-size: 32px;
+}
+
+.nav-brand:hover{
+    color: var(--primary-color)
 }
 
 .collapse{
@@ -117,6 +122,7 @@ a {
     margin: 12px;
     color: var(--dark);
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .nav-link:hover{
@@ -157,8 +163,13 @@ a {
 }
 
 .grid .grid-item{
-    width: calc(33.333% - 20px);
+    width: calc(20% - 20px);
     margin-bottom: 1em;
+    transition: transform .2s ease-in; /* Animation */
+}
+  
+.grid-item:hover {
+    transform: scale(1.027);
 }
 
 /* Main Section */
@@ -182,6 +193,10 @@ a {
 /* Media Query */
 
 @media(max-width: 992px) {
+    .grid .grid-item{
+        width: calc(33.333% - 20px);
+    }
+
     .navbar{
         flex-direction: column;
     }
