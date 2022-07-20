@@ -145,51 +145,32 @@ a {
 .shadow{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-/* Navigation Menu */
 
-/* Main Section */
+/* Contact */
 
-#site-main{
-    margin-top: 8em;
+
+.button{
+    margin-top: 40x;
 }
 
-#posts{
-    margin-bottom: 5pm;
+.button a{
+    color:white;
+    background-color: black;
+    border: 1px solid #000000;
+    padding: 10px 35px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 22px;
 }
 
-.grid{
-    margin: 0 auto;
+.button a:hover{
+    color: black;
+    background-color: white;
+
 }
 
-.grid .grid-item{
-    width: calc(20% - 20px);
-    margin-bottom: 1em;
-    transition: transform .2s ease-in; /* Animation */
-}
-  
-.grid-item:hover {
-    transform: scale(1.035);
-}
 
-/* Main Section */
-
-
-/* Sticky */
-
-.sticky{
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-}
-
-.sticky + .grid {
-    padding-top: 60px;
-  }
-/* Sticky */
-
-
-/* Media Query */
+  /* Media Query */
 
 @media(max-width: 992px) {
     .grid .grid-item{
@@ -243,4 +224,3 @@ a {
         margin-top: 6em;
     }
 }
-

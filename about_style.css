@@ -145,51 +145,70 @@ a {
 .shadow{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-/* Navigation Menu */
 
-/* Main Section */
+/* About */
 
-#site-main{
-    margin-top: 8em;
+.about-us{
+width: 100%;
 }
 
-#posts{
-    margin-bottom: 5pm;
+.about-us h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 40px;
 }
 
-.grid{
-    margin: 0 auto;
+/* .about-us h1::after{
+content: "";
+height: 5px;
+width: 200px;
+background-color: #000000;
+border-radius: 10px;
+display: black;
+margin:auto;
+} */
+
+.wrapper{
+    padding: 0px 60px;
+    margin: 60px auto;
 }
 
-.grid .grid-item{
-    width: calc(20% - 20px);
-    margin-bottom: 1em;
-    transition: transform .2s ease-in; /* Animation */
-}
-  
-.grid-item:hover {
-    transform: scale(1.035);
+.about_alan{
+    width: 60%;
+    float: left;
+    text-align: left;
+    padding: 0px 30px;
 }
 
-/* Main Section */
-
-
-/* Sticky */
-
-.sticky{
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: 100%;
+.about_alan a{
+    color: #2ec4b6;
 }
 
-.sticky + .grid {
-    padding-top: 60px;
+.about_alan a:hover{
+    color: #f15bb5;
+}
+
+
+.profile{
+    width: 40%;
+    float: right;
+    padding: 0px 30px;
+}
+
+/* Profile Pic */
+.profile img {
+    max-width: 100%x;
+    /* max-height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px; */
+
   }
-/* Sticky */
 
-
-/* Media Query */
+  /* Media Query */
 
 @media(max-width: 992px) {
     .grid .grid-item{
@@ -243,4 +262,3 @@ a {
         margin-top: 6em;
     }
 }
-
