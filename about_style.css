@@ -199,16 +199,15 @@ margin:auto;
 /* Profile Pic */
 .profile img {
     max-width: 100%x;
-    /* max-height: 200px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 14px; */
+ 
 
   }
+}
 
-  /* Media Query */
+/* Media Query */
+
+
+    /* Nav Bar  */
 
 @media(max-width: 992px) {
     .grid .grid-item{
@@ -262,3 +261,17 @@ margin:auto;
         margin-top: 6em;
     }
 }
+
+    /* About */
+    @media(max-width: 579px) {
+        .about_alan{
+            width: 100%;
+            float: none;
+        }
+        
+        .profile{
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
