@@ -43,7 +43,7 @@ body{
     color: var(--light-color-alt);
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
-    transition: background-color .25s,color .25s;
+    transition: background-color 3s, color 3s;
 }
 
 a{
@@ -80,6 +80,7 @@ body.light-theme{
     --transparent-dark-color: var(--secondary-background-color);
     --transparent-light-color: rgba(0,0,0,.1);
 }
+
 /* Reusable classes */
 .container{
     max-width: 160rem;
