@@ -263,7 +263,7 @@ margin:auto;
 }
 
     /* About */
-    @media(max-width: 579px) {
+    @media(max-width: 650px) {
         .about_alan{
             width: 100%;
             float: none;

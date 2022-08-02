@@ -150,6 +150,7 @@ a {
 
 .contact_page{
     text-align: center;
+
 }
 
 .contact_page h1{
@@ -157,10 +158,11 @@ a {
     color: #000000;
     margin-top: 40px;
     margin-bottom: 80px;
+    
 }
 
 .contact_page .info{
-    padding: 80px 0px;
+    padding: 10px 0px;
 }
 
 .button{
@@ -198,7 +200,7 @@ a {
     }
 }
 
-@media(max-width: 579px) {
+@media(max-width: 650px) {
 
     .navbar{
         flex-direction: column;

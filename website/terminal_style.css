@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* root styling */
+
+:root{
+  --light: #f8f9fa;
+  --secondary: #adb5bd;
+  --dark: #000000;
+  --primary-color: #f15bb5;
+  --secondary-color: #2ec4b6;
+  --border: #e9ecef;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+*>*{
+  box-sizing: border-box;
+}
+
+/* global styling */
+.text-light{
+  color: var(--light);
+}
+
+.text-secondary{
+  color: var(--secondary);
+}
+
+.text-dark{
+  color: var(--dark);
+}
+
+.text-primary{
+  color: var(--primary-color);
+}
+
+.bg-light{
+  background-color: var(--light);
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.img-fluid{
+  width: 100%
+}
+
+.text-title{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.secondary-title{
+  font-family: 'Roboto', sans-serif;
+}
+
+.display-1{
+  font-size: 22px;
+}
+
+.display-2{
+  font-size: 16px;
+}
+
+.display-3{
+  font-size: 14px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+
+/* Navigation Menu */
+.navbar{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+
+.nav-brand{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  align-self: center;
+  font-size: 32px;
+}
+
+.nav-brand:hover{
+  color: var(--primary-color)
+}
+
+.collapse{
+  align-self: center;
+}
+
+.nav-link{
+  font-size: 18px;
+  margin: 12px;
+  color: var(--dark);
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.nav-link:hover{
+  color: var(--primary-color)
+}
+
+.toggle-button{
+  font-size: 21px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin: 8px 10px;
+  display: none;
+}
+
+.toggle-button:focus{
+  outline: none;
+}
+
+.shadow{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* Navigation Menu */
+
+/* Sticky */
+
+.sticky{
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.sticky + .grid {
+  padding-top: 60px;
+}
+/* Sticky */
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } */
+   
+  body{
+    font-family: 'Roboto','Helvetica Neue', 'Lucida Grande', sans-serif;
+  }
+   
+  body, h1,h2,h3, p{
+      margin:0;
+      padding:0;
+  }
+   
+  /* .gradientCont{
+    background: linear-gradient(to right, white, white); 
+      width:100%;
+      height: 300px;
+  } */
+   
+  .mainCont{
+      width:1000px;
+      margin: 0 auto;
+  }
+   
+  .mainCont h2{
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-weight: 300;
+      font-size: 48px;
+      margin: 60px 0 0 0;
+      color: black;
+    opacity: 0;
+   
+    animation: fadeInAnimation 1s ease-in-out 0s forwards;
+  }
+   
+  .mainCont h3{
+      text-align: center;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+    margin: 0 0 60px 0;
+    opacity: 0;
+   
+    animation: fadeInAnimation 1s ease-in-out 0.5s forwards;
+  }
+   
+  .terminalCont{
+      background: black;
+      width: 100%;
+      border-radius: 4px;
+    padding:12px 0 0 0;
+    margin-top: 20px;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0;
+    
+   
+    animation:
+      slideDownAnimation .7s ease-in-out 1s forwards,
+      fadeInAnimation 0.6s ease-in-out 1s forwards;
+  }
+   
+  .userEnteredText{
+    color: rgba(255,255,255,0.5);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+   
+  #terminalReslutsCont{
+      width:100%;
+      height: 400px;
+      padding: 12px;
+      overflow-y: auto;
+      resize: none;
+      border: none;
+      font-size: 14px;
+    line-height: 28px;
+      display: block;
+      color: rgba(255,255,255,0.9);
+      text-align: left;
+  }
+   
+   
+  #terminalReslutsCont a{
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+  }
+   
+  #terminalReslutsCont a:hover{
+    text-decoration: underline;
+  }
+   
+  #terminalTextInput{
+      background: black;
+      display: block;
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      border-radius: 0 0 4px 4px;
+      width: 100%;
+      color: white;
+      padding: 18px;
+      font-size: 14px;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+  }
+   
+  @-webkit-keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+   
+  @-webkit-keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+  }
+  @-moz-keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+  }
+  @-o-keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+  }
+  @keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+  }
+   
+  @media screen and (max-width: 1000px){
+
+    .mainCont{
+      width: 100%;
+      padding: 0 12px;
+    }
+    .mainCont h2{
+      font-size: 32px;
+      margin: 40px 0 0 0;
+    }
+    .mainCont h3{
+      font-size: 16px;
+      margin: 0 0 40px 0;
+    }
+    #terminalReslutsCont{
+      height: 400px;
+    }
+   
+  }
+
+  /* navbar */
+
+@media(max-width: 650px) {
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .toggle-button{
+        display: initial;
+    }
+    
+    .collapse{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.7s cubic-bezier(1, -0.11, 0.05, 1.09);
+
+    }
+
+    .collapse .nav-link{
+        display: block;
+        text-align: center;
+    
+    }
+    
+    .search-box{
+        border-right: none;
+    }
+
+    .collapse-toggle{
+        max-height: 500px;
+
+    }
+
+    .grid .grid-item{
+        width: calc(100% - 20px);
+    }
+
+    #site-main{
+        margin-top: 6em;
+    }
+}
+
