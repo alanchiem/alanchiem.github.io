@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         case "skate":
           clearInput();
-          addTextToResults("So far I can do a pop-shuv it... sometimes. I feel like skating is 80% mental and it's a good way for me to practice overcoming my fears. When you land that trick after hundreds of failed attempts it feels so so satisfying. Also, every skater that I've met has been really nice.")
+          addTextToResults("So far I can do a pop-shuv it... sometimes. I feel like skating is 80% mental and it's a good way for me to practice overcoming my fears. When you land that trick after hundreds of failed attempts it feels so so satisfying. Also, every skater that I've met has been really nice. You should try it out if you haven't already!")
           break
 
         case "book":
