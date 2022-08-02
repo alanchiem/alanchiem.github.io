@@ -1,3 +1,16 @@
+// Toggle burger
+
+let toggle = document.querySelector("#header .toggle-button");
+let collapse = document.querySelectorAll("#header .collapse");
+
+toggle.addEventListener('click', function(){
+    collapse.forEach(col=>col.classList.toggle("collapse-toggle")
+    )
+})
+
+// Terminal functionality
+
+
 document.addEventListener('DOMContentLoaded', function() {
  
     document.getElementsByTagName('form')[0].onsubmit = function(evt) {
