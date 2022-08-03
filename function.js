@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var textInputValue = document.getElementById('terminalTextInput').value.trim();
    
     //Getting the text from the results div
-    var textResultsValue = document.getElementById('terminalReslutsCont').innerHTML;
+    var textResultsValue = document.getElementById('terminalResultsCont').innerHTML;
    
     // Clear text input
     var clearInput = function(){
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
    
     // Scroll to the bottom of the results div
     var scrollToBottomOfResults = function(){
-      var terminalResultsDiv = document.getElementById('terminalReslutsCont');
+      var terminalResultsDiv = document.getElementById('terminalResultsCont');
       terminalResultsDiv.scrollTop = terminalResultsDiv.scrollHeight;
     }
    
@@ -44,10 +44,15 @@ document.addEventListener('DOMContentLoaded', function() {
    
     // Add text to the results div
     var addTextToResults = function(textToAdd){
-      document.getElementById('terminalReslutsCont').innerHTML += "<p>" + textToAdd + "</p>";
+      document.getElementById('terminalResultsCont').innerHTML += "<p>" + textToAdd + "</p>";
       scrollToBottomOfResults();
     }
    
+    // clear text
+    var clearText = function() {
+      document.getElementById('terminalResultsCont').innerHTML = "<p>" + "" + "</p>";
+      scrollToBottomOfResults();
+    }
 
     // HELP LIST
     var postHelpList = function(){
@@ -56,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Try typing some of these commands. These aren't the only ones though! :)",
         "guitar",
         "skate",
+        "shaolin",
         "book",
         "language",
         "dunk",
@@ -118,6 +124,11 @@ document.addEventListener('DOMContentLoaded', function() {
         case "skate":
           clearInput();
           addTextToResults("So far I can do a pop-shuv it... sometimes. I feel like skating is 80% mental and it's a good way for me to practice overcoming my fears. When you land that trick after hundreds of failed attempts it feels so so satisfying. Also, every skater that I've met has been really nice. You should try it out if you haven't already!")
+          break
+
+        case "shaolin":
+          clearInput();
+          addTextToResults("After training for 8 years, I earned my black sash in Shaolin Kungfu. I have nearly 9 years of experience teaching it as well. Also, I occasionally lion dance each year. You might catch a glimpse of me on TV during SF's Chinese New Year parade :) ")
           break
 
         case "book":
@@ -183,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         case "clear":
           clearInput();
-          location.reload();
+          clearText();
           break;
    
         default:
