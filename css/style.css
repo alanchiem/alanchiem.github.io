@@ -162,7 +162,7 @@ a {
 }
 
 .grid .grid-item{
-    width: calc(20% - 20px);
+    width: calc(33.333% - 20px);
     margin-bottom: 1em;
     transition: transform .2s ease-in; /* Animation */
 }

@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var postHelpList = function(){
       // Array of all the help keywords
       var helpKeyWords = [
-        "Try typing some of these commands. There's more than these though! :)",
+        "Try typing some of these commands. These aren't the only ones though! :)",
         "guitar",
         "skate",
         "book",
