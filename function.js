@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         case "language":
           clearInput();
-          addTextToResults("I think learning languages is a really cool thing to do. I was raised by Vietnamese-speaking parents so I can understand a good amount of it... at least if the speaker has a southern accent haha. My mother's side of my family also lives in Switzerland so I know a bit of German. Recently, I've been teaching my self Japanese for fun and will be taking a class this coming semester!")
+          addTextToResults("I think learning languages is a really cool thing to do. I was raised by Vietnamese-speaking parents so I can understand a good amount of it... at least if the speaker has a southern accent haha. My mother's side of my family also lives in Switzerland so I know a bit of German. Recently, I've been teaching my self Japanese for fun and will be taking a class this coming semester! My goal is to pass the JLPT N3 this December.")
           break
 
         case "dunk":
