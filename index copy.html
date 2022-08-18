@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Chiem</title>
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="shadow bg-light">
+        <nav class="container navbar"> 
+            <a href="index.html" class = "nav-brand text-dark">
+                Alan Chiem
+            </a>
+
+            <!-- toggle button -->
+            <button class = "toggle-button">
+                <span><i class = "fas fa-bars"></i></span>
+            </button>
+
+            <!-- Collapse on Toggle Button Click-->
+            <div class="collapse">
+                <ul class="navbar-nav">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="terminal.html" class="nav-link">The Terminal</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </ul>
+            </div>
+
+            <!-- Collapse on Toggle Button Click-->
+            <div class="collapse">
+                <ul class="navbar-nav">
+                    <a href="https://www.linkedin.com/in/alan-chiem/" target="_blank" rel="noopener noreferrer" class="nav-link"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/alanchiem" target="_blank" rel="noopener noreferrer" class="nav-link"> <i class="fa-brands fa-github"></i> </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+<style>
+    .wrapper {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 1em;
+        /* grid-auto-rows: 100px; */
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-rows: 70px;
+        grid-gap: 1em;
+    }
+
+    .nested > div{
+        padding: 1em;
+        border: #333 1px solid;
+    }
+    .wrapper > div {
+        background: #eee;
+        padding: 1em;
+    }
+    .wrapper > div:nth-child(odd) {
+        background: #ddd;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div> Lorem ipsum dolor sit. </div>
+        <div> Lorem ipsum dolor sit. </div>
+        <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nostrum, corrupti sapiente laboriosam incidunt quisquam amet error debitis cumque eaque libero rerum quidem ea voluptas assumenda! Voluptates debitis perspiciatis unde, iusto voluptatibus culpa, nihil sunt quia sapiente magnam quae distinctio.. </div>
+        <div class = "nested"> 
+            <div> Lorem </div>
+            <div> Lorem </div>
+            <div> Lorem </div>
+            <div> Lorem </div>
+            <div> Lorem </div>
+            <div> Lorem </div>
+        </div> 
+        <div> Lorem ipsum dolor sit. </div>
+        <div> Lorem ipsum dolor sit. </div>
+        <div> Lorem ipsum dolor sit. </div>
+        <div> Lorem ipsum dolor sit. </div>
+    </div>
+
+</body>
+
+    
+
+
+    <!-- masonry library for grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- custom js main.js file -->
+    <script src="main.js"> </script>
+</body>
+</html>
