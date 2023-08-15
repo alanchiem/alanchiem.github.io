@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "shaolin",
         "book",
         "language",
-        "dunk",
+        "basketball",
         "clear",
         
         // "- 'Time' will display the current time.",
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         case "guitar":
           clearInput();
-          addTextToResults("I've been playing guitar for about 13 years now. I normally play some jazz or finger-style covers, but I really enjoy playing with people so if you'd like, contact me and we can jam!");
+          addTextToResults("I've been playing guitar for about 15 years now. I normally play some jazz or finger-style covers, but I really enjoy playing with people so if you'd like, contact me and we can jam!");
           break
 
         case "skate":
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         case "shaolin":
           clearInput();
-          addTextToResults("After training for 8 years, I earned my black sash in Shaolin Kungfu. I have nearly 9 years of experience teaching it as well. Also, I occasionally lion dance each year. You might catch a glimpse of me on TV during SF's Chinese New Year parade :) ")
+          addTextToResults("After training for 8 years, I earned my black sash in Shaolin Kungfu. I have nearly 9 years of experience teaching it as well. Also, I occasionally lion dance each year. You might catch a glimpse of me on TV during SF's Chinese New Year parade! ")
           break
 
         case "book":
@@ -137,13 +137,14 @@ document.addEventListener('DOMContentLoaded', function() {
           break
 
         case "language":
+        case "languages":
           clearInput();
-          addTextToResults("I think learning languages is a really cool thing to do. I was raised by Vietnamese-speaking parents so I can understand a good amount of it... at least if the speaker has a southern accent haha. My mother's side of my family also lives in Switzerland so I know a bit of German. Recently, I've been teaching my self Japanese for fun and will be taking a class this coming semester! My goal is to pass the JLPT N3 this December.")
+          addTextToResults("I think learning languages is a really cool thing to do. I was raised by Vietnamese-speaking parents so I can understand a good amount of it... at least if the speaker has a southern accent. I also have some family in Switzerland so I know a bit of German. Most recently, I've been learning Japanese for fun.")
           break
 
-        case "dunk":
+        case "basketball":
           clearInput();
-          addTextToResults("One of my dreams is to dunk a basketball. Since I'm short, it makes it a very difficult challenge. As of now, I can touch rim, which I'm really happy about. Hopefully within these next few years I'll be able to make it.")
+          addTextToResults("One of my dreams is to dunk a basketball. Since I'm vertically-challenged, it makes it a very difficult goal haha. As of now, I can touch the rim which I'm really happy about. Hopefully within these next few years I'll be able to make it.")
           break
 
         case "hello":
@@ -199,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
    
         default:
         clearInput();
-        addTextToResults("<p><i>The command " + "<b>" + textInputValue + "</b>" + " was not found. Type <b>help</b> to see all commands.</i></p>");
+        addTextToResults("<p><i>The command " + "<b>" + textInputValue + "</b>" + " was not found. Type <b>help</b> to see possible commands.</i></p>");
         break;
       }
     }
